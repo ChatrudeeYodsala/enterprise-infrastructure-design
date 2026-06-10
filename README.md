@@ -44,3 +44,17 @@ This project simulates an enterprise infrastructure environment for a medium-siz
 - Samba File Server
 - Monitoring System
 - SIEM Integration
+
+## Implementation Progress
+
+### FILE01 Deployment
+Implemented Ubuntu Server 24.04 LTS using UTM.
+
+Features:
+- Samba File Sharing
+- Shared Folder Configuration
+- SMB Access from macOS
+- Basic Infrastructure Documentation
+
+### Evidence
+See screenshots folder for deployment screenshots.
