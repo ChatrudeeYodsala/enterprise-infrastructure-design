@@ -1,35 +1,38 @@
 # Enterprise Infrastructure Design
 
 ## Overview
-This project demonstrates the design and implementation of a small enterprise infrastructure environment for a medium-sized company with 100 employees. The project focuses on infrastructure planning, Linux server administration, file sharing services, system monitoring, and security best practices.
 
-## Objectives
+Designed and implemented a small enterprise infrastructure environment for a medium-sized company with 100 employees.
 
+The project focuses on infrastructure architecture, Linux server administration, file sharing services, monitoring, and security hardening. The environment was deployed using Ubuntu Server on UTM virtualization and documented using industry-standard infrastructure documentation practices.
+
+## Objectives 
 * Design enterprise network architecture
-* Implement network segmentation
-* Deploy and configure Linux servers
-* Implement file sharing services
-* Monitor system resources and performance
-* Apply infrastructure security controls
+* Implement network segmentation 
+* Deploy and configure Linux servers 
+* Implement file sharing services 
+* Monitor system resources and performance 
+* Apply infrastructure security controls 
 * Create professional technical documentation
 
-## Company Structure
-
-* HR
-* Finance
-* IT
+## Company Structure 
+* HR 
+* Finance 
+* IT 
 * Marketing
 
-## Infrastructure Components
+## Architecture
+
+### Infrastructure Components
 
 | Server | Purpose                         |
 | ------ | ------------------------------- |
-| DC01   | Authentication and DNS Services |
 | FILE01 | File Storage and File Sharing   |
 | MON01  | Infrastructure Monitoring       |
 | SIEM01 | Security Monitoring and Logging |
+| DC01   | Authentication and DNS Services |
 
-## Network Design
+### Network Design
 
 * VLAN 10 – HR
 * VLAN 20 – Finance
@@ -37,76 +40,76 @@ This project demonstrates the design and implementation of a small enterprise in
 * VLAN 40 – Marketing
 * VLAN 50 – Server Network
 
-## Architecture Diagram
+### Architecture Diagram
 
 ![Network Topology](diagrams/network-topology.png)
 
-## Security Controls
-
-* Password Policy
-* Account Lockout Policy
-* Multi-Factor Authentication (MFA)
-* Daily Backup Strategy
-* Security Logging
+## Security Controls 
+* Password Policy 
+* Account Lockout Policy 
+* Multi-Factor Authentication (MFA) 
+* Daily Backup Strategy 
+* Security Logging 
 * Access Control Management
 
-## Project Phases
+## Implementation
 
-### Phase 1 – Infrastructure Design
+### File Services
 
-* Company requirements analysis
-* Network architecture design
-* Server planning
-* Security planning
-* Infrastructure documentation
+* Ubuntu Server 24.04 LTS deployment
+* Samba file sharing configuration
+* SMB access from macOS clients
+* Shared folder management
 
-### Phase 2 – File Server Implementation
+### Monitoring
 
-* Ubuntu Server deployment on UTM
-* Samba installation and configuration
-* Shared folder creation
-* SMB access testing from macOS
-* Infrastructure documentation
-
-### Phase 3 – Monitoring and Operations
-
-* htop installation and configuration
-* btop installation and configuration
+* htop
+* btop
 * CPU monitoring
 * Memory monitoring
-* Disk usage monitoring
-* System health verification
+* Disk utilization monitoring
+
+### Security Hardening
+
+* UFW Firewall
+* SSH protection
+* SMB access control
+* Fail2Ban intrusion prevention
 
 ## Technologies Used
 
 * Ubuntu Server
-* Linux Administration
 * Samba
-* SMB Protocol
-* UTM Virtualization
+* Linux Administration
+* UTM
 * htop
 * btop
+* UFW
+* Fail2Ban
 * Git
 * GitHub
 
 ## Repository Structure
 
-```text
 docs/
 diagrams/
 implementation/
 screenshots/
-```
 
-## Evidence
+## Key Outcomes
 
-Deployment and configuration screenshots are available in the `screenshots` directory.
+* Successfully deployed a Linux-based file server environment.
+* Implemented monitoring and operational visibility for system resources.
+* Applied security controls to protect infrastructure services.
+* Produced technical documentation and infrastructure diagrams.
 
-## Future Enhancements
+## Lessons Learned
 
-* Infrastructure Security Hardening
-* Firewall Configuration
-* Fail2Ban Implementation
-* Centralized Logging
-* DNS Services
-* Monitoring Dashboard
+* Linux Server Administration
+* Infrastructure Design
+* Security Hardening
+* Monitoring and Operations
+* Technical Documentation
+* Git and GitHub Workflow
+
+
